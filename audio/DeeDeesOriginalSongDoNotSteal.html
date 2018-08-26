@@ -1,0 +1,15 @@
+<body bgcolor="#333333" text="#A9A9A9">
+<audio id="song" preload="auto" autoplay>
+  <source src="DeeDeesOriginalSongDoNotSteal.ogg" type="audio/ogg">
+  <source src="DeeDeesOriginalSongDoNotSteal.mp3" type="audio/mp3">
+</audio> 
+
+<p><abbr title="Toggle Music"><img src="../ui/song.png" alt="Toggle Music" onClick="togglePlay()"></abbr></p></body>
+
+<script>
+var song = document.getElementById("song");
+
+function togglePlay() {
+  song.currentTime = 0;
+  return song.paused ? song.play() : song.pause();}
+</script>
